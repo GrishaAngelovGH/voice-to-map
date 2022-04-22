@@ -1,9 +1,10 @@
 import Layout from './Layout'
+import MapHeader from './Header'
 
 export const Header = () => (
     <div className="row g-0" data-testid="vm-header">
         <div className="col-md-12">
-            Header
+            <MapHeader />
         </div>
     </div>
 )
