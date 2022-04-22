@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import Layout from './Layout'
 
-test('should render component', async () => {
+test('should render component', () => {
     render(
         <Layout
             header={<div>header</div>}

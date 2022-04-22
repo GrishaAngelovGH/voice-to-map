@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import VoiceMap from './VoiceMap'
 
-test('should render component', async () => {
+test('should render component', () => {
     render(<VoiceMap />)
 
     expect(screen.getAllByTestId('voice-map')).toBeTruthy()
