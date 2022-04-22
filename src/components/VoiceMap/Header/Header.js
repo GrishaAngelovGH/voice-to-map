@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 
 import Fab from '@mui/material/Fab'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 
 import recognition from "../recognition"
+import { addLocation } from '../../../slices/locationSlice'
 
 const Header = () => {
     const [isRecoding, setIsRecording] = useState(false)
     const [detectedInput, setDetectedInput] = useState('')
+    const dispatch = useDispatch()
 
     const handleClick = () => {
         recognition.start()
@@ -16,13 +19,14 @@ const Header = () => {
     }
 
     useEffect(() => {
-        recognition.onresult = function (event) {
+        recognition.onresult = event => {
             const input = event.results[0][0].transcript
 
             setDetectedInput(input)
+            dispatch(addLocation(input))
         }
 
-        recognition.onerror = function ({ error }) {
+        recognition.onerror = ({ error }) => {
             if (error === 'no-speech') {
                 setDetectedInput('No detected speech')
             }
@@ -30,11 +34,11 @@ const Header = () => {
             setIsRecording(false)
         }
 
-        recognition.onspeechend = function () {
+        recognition.onspeechend = () => {
             recognition.stop()
             setIsRecording(false)
         }
-    }, [isRecoding])
+    }, [dispatch])
 
     return (
         <Box
