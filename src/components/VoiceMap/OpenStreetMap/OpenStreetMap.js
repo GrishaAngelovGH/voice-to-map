@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import { MapContainer, TileLayer } from 'react-leaflet'
 
 const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -11,7 +12,13 @@ const OpenStreetMap = () => {
         markers: []
     })
 
+    const lastLocation = useSelector(state => state.locations.lastLocation)
+
     const position = [map.lat, map.lng]
+
+    useEffect(() => {
+
+    }, [lastLocation])
 
     return (
         <div data-testid="osm">
