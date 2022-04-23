@@ -1,5 +1,6 @@
 import Layout from './Layout'
 import MapHeader from './Header'
+import OpenStreetMap from './OpenStreetMap'
 
 export const Header = () => (
     <div className="row g-0" data-testid="vm-header">
@@ -12,7 +13,7 @@ export const Header = () => (
 export const Body = () => (
     <div className="row g-0" data-testid="vm-body">
         <div className="col-md-12">
-            Body
+            <OpenStreetMap />
         </div>
     </div>
 )

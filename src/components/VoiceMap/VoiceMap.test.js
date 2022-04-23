@@ -1,20 +1,28 @@
 import { render, screen } from '@testing-library/react'
+import { Provider } from 'react-redux'
+import configureStore from 'redux-mock-store'
+
 import VoiceMap from './VoiceMap'
 
-test('should render component', () => {
-    render(<VoiceMap />)
+const mockStore = configureStore()
+const store = mockStore({})
 
+beforeEach(() => {
+    render(
+        <Provider store={store}>
+            <VoiceMap />
+        </Provider>
+    )
+})
+
+test('should render component', () => {
     expect(screen.getAllByTestId('voice-map')).toBeTruthy()
 })
 
 test('should render Header', () => {
-    render(<VoiceMap />)
-
     expect(screen.getAllByTestId('vm-header')).toBeTruthy()
 })
 
 test('should render Body', () => {
-    render(<VoiceMap />)
-
     expect(screen.getAllByTestId('vm-body')).toBeTruthy()
 })
