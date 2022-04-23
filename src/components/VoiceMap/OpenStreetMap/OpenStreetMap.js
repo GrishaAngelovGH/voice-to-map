@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
+import { toast } from 'react-toastify'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 import axios from 'axios'
 
 import MarkerIcon from './MarkerIcon'
@@ -30,7 +32,7 @@ const OpenStreetMap = () => {
                 setLocations(data)
             }
             catch (err) {
-                console.error(err);
+                toast.error('An unexpected error has occurred, please try again', { theme: 'colored' })
             }
         }
 

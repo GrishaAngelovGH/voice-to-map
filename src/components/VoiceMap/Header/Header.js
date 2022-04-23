@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
+import { toast } from 'react-toastify'
 
 import Fab from '@mui/material/Fab'
 import Box from '@mui/material/Box'
@@ -29,6 +30,7 @@ const Header = () => {
         recognition.onerror = ({ error }) => {
             if (error === 'no-speech') {
                 setDetectedInput('No detected speech')
+                toast.error('No detected speech', { theme: 'colored' })
             }
             recognition.stop()
             setIsRecording(false)
