@@ -5,23 +5,22 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 import axios from 'axios'
 
+import Alert from '@mui/material/Alert'
 import MarkerIcon from './MarkerIcon'
 import CenterView from './CenterView'
 
-const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+import './OpenStreetMap.css'
 
 const map = {
     lat: 51.505,
     lng: -0.09,
-    zoom: 13
+    zoom: 13,
+    url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 }
 
 const OpenStreetMap = () => {
     const [locations, setLocations] = useState([])
-
     const lastLocation = useSelector(state => state.locations.lastLocation)
-
-    const position = [map.lat, map.lng]
 
     useEffect(() => {
         const fetchLocation = async () => {
@@ -42,9 +41,16 @@ const OpenStreetMap = () => {
 
     return (
         <div data-testid="osm">
-            <style>{'.leaflet-container {height: 100vh;}'}</style>
-            <MapContainer center={position} zoom={map.zoom}>
-                <TileLayer url={url} />
+            {
+                locations.length > 0 && (
+                    <Alert severity="success" className="justify-content-center">
+                        Found {locations.length} results
+                    </Alert>
+                )
+            }
+
+            <MapContainer center={[map.lat, map.lng]} zoom={map.zoom}>
+                <TileLayer url={map.url} />
                 {
                     locations.map(v => (
                         <Marker key={v.place_id} position={[v.lat, v.lon]} icon={MarkerIcon}>
