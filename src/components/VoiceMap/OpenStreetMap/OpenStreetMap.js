@@ -6,6 +6,8 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import axios from 'axios'
 
 import Alert from '@mui/material/Alert'
+
+import Menu from './Menu'
 import MarkerIcon from './MarkerIcon'
 import CenterView from './CenterView'
 
@@ -41,6 +43,8 @@ const OpenStreetMap = () => {
 
     return (
         <div data-testid="osm">
+            <Menu />
+
             {
                 locations.length > 0 && (
                     <Alert severity="success" className="justify-content-center">
