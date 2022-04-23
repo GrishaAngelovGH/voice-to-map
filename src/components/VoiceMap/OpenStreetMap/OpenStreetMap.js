@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react'
-import { useSelector } from 'react-redux'
-import { toast } from 'react-toastify'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { useSelector, useDispatch } from 'react-redux'
 
 import axios from 'axios'
-
-import Alert from '@mui/material/Alert'
+import { toast } from 'react-toastify'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 import Menu from './Menu'
 import MarkerIcon from './MarkerIcon'
 import CenterView from './CenterView'
 
+import Alert from '@mui/material/Alert'
+
 import './OpenStreetMap.css'
+import { addToHistory } from '../../../slices/locationSlice'
 
 const map = {
     lat: 51.505,
@@ -23,6 +24,7 @@ const map = {
 const OpenStreetMap = () => {
     const [locations, setLocations] = useState([])
     const lastLocation = useSelector(state => state.locations.lastLocation)
+    const dispatch = useDispatch()
 
     useEffect(() => {
         const fetchLocation = async () => {
@@ -30,7 +32,9 @@ const OpenStreetMap = () => {
                 const key = process.env.REACT_APP_DEMO_GEOCODING_API_ACCESS_TOKEN
                 const url = `https://eu1.locationiq.com/v1/search.php?key=${key}&q=${lastLocation}&format=json`
                 const { data } = await axios.get(url)
+
                 setLocations(data)
+                dispatch(addToHistory(data))
             }
             catch (err) {
                 toast.error('An unexpected error has occurred, please try again', { theme: 'colored' })
@@ -38,12 +42,11 @@ const OpenStreetMap = () => {
         }
 
         lastLocation.length > 0 && fetchLocation()
-
-    }, [lastLocation])
+    }, [lastLocation, dispatch])
 
     return (
         <div data-testid="osm">
-            <Menu />
+            <Menu disableHistory={!locations.length} />
 
             {
                 locations.length > 0 && (

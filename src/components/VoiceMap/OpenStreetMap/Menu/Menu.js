@@ -7,12 +7,14 @@ import Drawer from '@mui/material/Drawer'
 import HistoryIcon from '@mui/icons-material/History'
 import DesktopWindowsIcon from '@mui/icons-material/DesktopWindows'
 
-const Menu = () => {
+import History from './History'
+
+const Menu = ({ disableHistory }) => {
     const [showHistory, setShowHistory] = useState(false)
     const [showWorkflow, setShowWorkflow] = useState(false)
 
     const handleChange = (event, index) => {
-        index === 0 ? setShowHistory(true) : setShowWorkflow(true)
+        index === 0 ? !disableHistory && setShowHistory(true) : setShowWorkflow(true)
     }
 
     const handleClose = () => {
@@ -29,7 +31,7 @@ const Menu = () => {
                 </BottomNavigation>
 
                 <Drawer open={showHistory || showWorkflow} anchor={'top'} onClose={handleClose}>
-                    {showHistory && <div>HISTORY</div>}
+                    {showHistory && <History />}
                     {showWorkflow && <div>WORKFLOW</div>}
                 </Drawer>
             </div>

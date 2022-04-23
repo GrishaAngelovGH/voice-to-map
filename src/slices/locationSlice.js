@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    lastLocation: ''
+    lastLocation: '',
+    history: []
 }
 
 export const locationSlice = createSlice({
@@ -10,10 +11,16 @@ export const locationSlice = createSlice({
     reducers: {
         addLocation: (state, action) => {
             state.lastLocation = action.payload
+        },
+        addToHistory: (state, action) => {
+            state.history = [
+                ...state.history,
+                ...action.payload
+            ]
         }
     }
 })
 
-export const { addLocation } = locationSlice.actions
+export const { addLocation, addToHistory } = locationSlice.actions
 
 export default locationSlice.reducer
