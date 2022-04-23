@@ -1,28 +1,20 @@
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import axios from 'axios'
 
 import MarkerIcon from './MarkerIcon'
+import CenterView from './CenterView'
 
 const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 
-const View = ({ locations }) => {
-    const m = useMap()
-
-    if (locations.length > 0) {
-        m.setView([locations[0].lat, locations[0].lon], 15)
-    }
-    return null
+const map = {
+    lat: 51.505,
+    lng: -0.09,
+    zoom: 13
 }
 
 const OpenStreetMap = () => {
-    const map = {
-        lat: 51.505,
-        lng: -0.09,
-        zoom: 13
-    }
-
     const [locations, setLocations] = useState([])
 
     const lastLocation = useSelector(state => state.locations.lastLocation)
@@ -60,7 +52,7 @@ const OpenStreetMap = () => {
                         </Marker>
                     ))
                 }
-                <View locations={locations} />
+                <CenterView locations={locations} />
             </MapContainer>
         </div>
     )
