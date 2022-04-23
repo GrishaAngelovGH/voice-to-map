@@ -46,16 +46,16 @@ const Header = () => {
                 height: 150,
                 backgroundColor: 'primary.light'
             }}
-            className="row g-0 justify-content-center align-items-center p-3"
+            className="row g-0 justify-content-center align-items-center text-center p-3"
             data-testid="header"
         >
-            <div className="col-md-4 text-white">
+            <div className="col-md-5 text-white border rounded bg-primary">
                 <h1>Voice-To-Map</h1>
                 <h3>Navigate map with your voice</h3>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-3">
                 <Fab variant="extended" color={!isRecoding ? "inherit" : "warning"} onClick={handleClick}>
-                    {!isRecoding ? "Record" : "Recording..."}
+                    {!isRecoding ? "Record Voice" : "Recording..."}
                 </Fab>
             </div>
             <div className="col-md-4 bg-light p-3 rounded">
