@@ -5,7 +5,7 @@ import configureStore from 'redux-mock-store'
 
 test('should render component', () => {
   const mockStore = configureStore()
-  const store = mockStore({})
+  const store = mockStore({ locations: { lastLocation: '' } })
 
   render(
     <Provider store={store}>

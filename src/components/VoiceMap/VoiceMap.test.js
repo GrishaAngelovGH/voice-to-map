@@ -5,7 +5,7 @@ import configureStore from 'redux-mock-store'
 import VoiceMap from './VoiceMap'
 
 const mockStore = configureStore()
-const store = mockStore({})
+const store = mockStore({ locations: { lastLocation: '' } })
 
 beforeEach(() => {
     render(
