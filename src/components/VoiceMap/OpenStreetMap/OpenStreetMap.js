@@ -3,14 +3,7 @@ import { useSelector } from 'react-redux'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import axios from 'axios'
 
-import L from 'leaflet';
-import lefletIcon from 'leaflet/dist/images/marker-icon-2x.png'
-
-const markerIcon = new L.Icon({
-    iconUrl: lefletIcon,
-    popupAnchor: [-0, -0],
-    iconSize: [32, 50],
-})
+import MarkerIcon from './MarkerIcon'
 
 const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 
@@ -60,7 +53,7 @@ const OpenStreetMap = () => {
                 <TileLayer url={url} />
                 {
                     locations.map(v => (
-                        <Marker key={v.place_id} position={[v.lat, v.lon]} icon={markerIcon}>
+                        <Marker key={v.place_id} position={[v.lat, v.lon]} icon={MarkerIcon}>
                             <Popup>
                                 <div className="fw-bold">{v.display_name}</div>
                             </Popup>
