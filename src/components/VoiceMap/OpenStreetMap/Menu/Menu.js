@@ -9,6 +9,7 @@ import HistoryIcon from '@mui/icons-material/History'
 import DesktopWindowsIcon from '@mui/icons-material/DesktopWindows'
 
 import History from './History'
+import Suggestions from './Suggestions'
 
 const Menu = ({ disableHistory }) => {
     const [showHistory, setShowHistory] = useState(false)
@@ -41,7 +42,7 @@ const Menu = ({ disableHistory }) => {
 
                 <Drawer open={showHistory || showWorkflow || showSuggestions} anchor={'top'} onClose={handleClose}>
                     {showHistory && <History onClose={handleClose} />}
-                    {showSuggestions && <div>SUGGESTIONS</div>}
+                    {showSuggestions && <Suggestions onClose={handleClose} />}
                     {showWorkflow && <div>WORKFLOW</div>}
                 </Drawer>
             </div>
