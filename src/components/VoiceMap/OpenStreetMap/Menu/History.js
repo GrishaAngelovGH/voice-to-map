@@ -1,3 +1,4 @@
+import React from 'react'
 import { useSelector } from 'react-redux'
 import { Fragment } from 'react'
 
@@ -10,15 +11,20 @@ import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
 import Divider from '@mui/material/Divider'
+import Slide from '@mui/material/Slide'
 
 import RoomIcon from '@mui/icons-material/Room'
 import CloseIcon from '@mui/icons-material/Close'
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />
+})
 
 const History = ({ onClose }) => {
     const history = useSelector(state => state.locations.history)
 
     return (
-        <Dialog fullScreen={true} open={true}>
+        <Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
             <AppBar sx={{ position: 'sticky' }}>
                 <Toolbar>
                     <IconButton
