@@ -6,7 +6,6 @@ import Drawer from '@mui/material/Drawer'
 
 import ListIcon from '@mui/icons-material/List'
 import HistoryIcon from '@mui/icons-material/History'
-import DesktopWindowsIcon from '@mui/icons-material/DesktopWindows'
 
 import History from './History'
 import Suggestions from './Suggestions'
@@ -14,21 +13,14 @@ import Suggestions from './Suggestions'
 const Menu = ({ disableHistory }) => {
     const [showHistory, setShowHistory] = useState(false)
     const [showSuggestions, setShowSuggestions] = useState(false)
-    const [showWorkflow, setShowWorkflow] = useState(false)
 
     const handleChange = (event, index) => {
-        if (index === 0) {
-            !disableHistory && setShowHistory(true)
-            return
-        }
-
-        index === 1 ? setShowSuggestions(true) : setShowWorkflow(true)
+        index === 0 ? !disableHistory && setShowHistory(true) : setShowSuggestions(true)
     }
 
     const handleClose = () => {
         setShowHistory(false)
         setShowSuggestions(false)
-        setShowWorkflow(false)
     }
 
     return (
@@ -37,13 +29,11 @@ const Menu = ({ disableHistory }) => {
                 <BottomNavigation showLabels={true} onChange={handleChange}>
                     <BottomNavigationAction label="History" icon={<HistoryIcon />} />
                     <BottomNavigationAction label="Suggestions" icon={<ListIcon />} />
-                    <BottomNavigationAction label="Workflow" icon={<DesktopWindowsIcon />} />
                 </BottomNavigation>
 
-                <Drawer open={showHistory || showWorkflow || showSuggestions} anchor={'top'} onClose={handleClose}>
+                <Drawer open={showHistory || showSuggestions} anchor={'top'} onClose={handleClose}>
                     {showHistory && <History onClose={handleClose} />}
                     {showSuggestions && <Suggestions onClose={handleClose} />}
-                    {showWorkflow && <div>WORKFLOW</div>}
                 </Drawer>
             </div>
         </div>
