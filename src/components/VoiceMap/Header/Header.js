@@ -15,8 +15,10 @@ const Header = () => {
     const dispatch = useDispatch()
 
     const handleClick = () => {
-        recognition.start()
-        setIsRecording(true)
+        if (!isRecoding) {
+            recognition.start()
+            setIsRecording(true)
+        }
     }
 
     useEffect(() => {
