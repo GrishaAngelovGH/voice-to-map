@@ -6,7 +6,7 @@ import Header from './Header'
 
 test('should render component', () => {
     const mockStore = configureStore()
-    const store = mockStore({})
+    const store = mockStore({ locations: { lastLocation: '', history: [] } })
 
     render(
         <Provider store={store}>

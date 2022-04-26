@@ -5,7 +5,7 @@ import configureStore from 'redux-mock-store'
 import OpenStreetMap from './OpenStreetMap'
 
 const mockStore = configureStore()
-const store = mockStore({ locations: { lastLocation: '' } })
+const store = mockStore({ locations: { lastLocation: '', history: [] } })
 
 test('should render component', () => {
     render(
