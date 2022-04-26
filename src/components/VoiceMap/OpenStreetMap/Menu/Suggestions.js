@@ -33,7 +33,7 @@ const suggestions = [
 ]
 
 const Suggestions = ({ onClose }) => (
-    <Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
+    <Dialog fullScreen={true} open={true} TransitionComponent={Transition} data-testid="suggestions">
         <AppBar sx={{ position: 'sticky' }} color="secondary">
             <Toolbar>
                 <IconButton
