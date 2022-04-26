@@ -1,0 +1,5 @@
+@media only screen and (max-width: 576px) {
+    #layout-body {
+      margin-top: 80px;
+    }
+  }

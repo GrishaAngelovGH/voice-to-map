@@ -14,11 +14,12 @@ const Header = () => (
             height: 150,
             backgroundColor: 'primary.light'
         }}
-        className="row g-0 justify-content-center align-items-center text-center p-3"
         data-testid="header"
     >
-        <Logo />
-        <VoiceSearch />
+        <div className="row g-0 justify-content-center align-items-center text-center p-3">
+            <Logo />
+            <VoiceSearch />
+        </div>
     </Box>
 )
 

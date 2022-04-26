@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import './Layout.css'
 
 const Layout = ({ header, body }) => (
     <div className="row g-0" data-testid="layout">
@@ -7,9 +8,9 @@ const Layout = ({ header, body }) => (
                 {header}
             </Layout.Header>
 
-            <Layout.Header>
+            <Layout.Body>
                 {body}
-            </Layout.Header>
+            </Layout.Body>
         </div>
     </div>
 )
@@ -23,7 +24,7 @@ Layout.Header = ({ children }) => (
 )
 
 Layout.Body = ({ children }) => (
-    <div className="row g-0" data-testid="layout-body">
+    <div id="layout-body" className="row g-0" data-testid="layout-body">
         <div className="col-md-12">
             {children}
         </div>
