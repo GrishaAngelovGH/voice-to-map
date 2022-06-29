@@ -24,7 +24,7 @@ const History = ({ onClose }) => {
     const history = useSelector(state => state.locations.history)
 
     return (
-        <Dialog fullScreen={true} open={true} TransitionComponent={Transition} data-testid="history">
+        <Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
             <AppBar sx={{ position: 'sticky' }}>
                 <Toolbar>
                     <IconButton

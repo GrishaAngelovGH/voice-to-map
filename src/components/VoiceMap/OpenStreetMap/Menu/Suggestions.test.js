@@ -1,9 +1,9 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import Suggestions from './Suggestions'
 
 test('should render component', () => {
-    render(<Suggestions />)
+    const container = render(<Suggestions />)
 
-    expect(screen.getAllByTestId('suggestions')).toBeTruthy()
+    expect(container).toMatchSnapshot()
 })

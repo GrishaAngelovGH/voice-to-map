@@ -14,7 +14,6 @@ const Header = () => (
             height: 150,
             backgroundColor: 'primary.light'
         }}
-        data-testid="header"
     >
         <div className="row g-0 justify-content-center align-items-center text-center p-3">
             <Logo />

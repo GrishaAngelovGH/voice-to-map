@@ -1,0 +1,670 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="row g-0"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="row g-0"
+          >
+            <div
+              class="col-md-12"
+            >
+              <div
+                class="row g-0"
+              >
+                <div
+                  class="col-md-12"
+                >
+                  <div
+                    class="row g-0"
+                  >
+                    <div
+                      class="col-md-12"
+                    >
+                      <div
+                        class="row g-0"
+                      >
+                        <div
+                          class="col-md-12"
+                        >
+                          <div
+                            class="MuiBox-root css-1ipnkmb"
+                          >
+                            <div
+                              class="row g-0 justify-content-center align-items-center text-center p-3"
+                            >
+                              <div
+                                class="col-md-5 text-white border rounded bg-primary"
+                              >
+                                <h1>
+                                  Voice-To-Map
+                                </h1>
+                                <h3>
+                                  Navigate map with your voice
+                                </h3>
+                              </div>
+                              <div
+                                class="col-md-3"
+                              >
+                                <button
+                                  class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 mb-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
+                                  tabindex="0"
+                                  type="button"
+                                >
+                                  Record Voice
+                                  <span
+                                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                                  />
+                                </button>
+                              </div>
+                              <div
+                                class="col-md-4 bg-light p-3 rounded"
+                              >
+                                <div
+                                  class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+                                >
+                                  <label
+                                    class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorInfo Mui-disabled css-rp6sv4-MuiFormLabel-root-MuiInputLabel-root"
+                                    data-shrink="false"
+                                    for=":r0:"
+                                    id=":r0:-label"
+                                  >
+                                    Detected Input
+                                  </label>
+                                  <div
+                                    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorInfo Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl css-1udmear-MuiInputBase-root-MuiOutlinedInput-root"
+                                  >
+                                    <input
+                                      aria-invalid="false"
+                                      class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                                      disabled=""
+                                      id=":r0:"
+                                      type="text"
+                                      value=""
+                                    />
+                                    <fieldset
+                                      aria-hidden="true"
+                                      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                                    >
+                                      <legend
+                                        class="css-1ftyaf0"
+                                      >
+                                        <span>
+                                          Detected Input
+                                        </span>
+                                      </legend>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="row g-0"
+                    id="layout-body"
+                  >
+                    <div
+                      class="col-md-12"
+                    >
+                      <div
+                        class="row g-0"
+                      >
+                        <div
+                          class="col-md-12"
+                        >
+                          <div>
+                            <div
+                              class="row g-0"
+                            >
+                              <div
+                                class="col-md-12"
+                              >
+                                <div
+                                  class="MuiBottomNavigation-root css-16lloyr-MuiBottomNavigation-root"
+                                >
+                                  <button
+                                    class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root"
+                                    tabindex="0"
+                                    type="button"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                      data-testid="HistoryIcon"
+                                      focusable="false"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
+                                      />
+                                    </svg>
+                                    <span
+                                      class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label"
+                                    >
+                                      History
+                                    </span>
+                                    <span
+                                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                                    />
+                                  </button>
+                                  <button
+                                    class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root"
+                                    tabindex="0"
+                                    type="button"
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                      data-testid="ListIcon"
+                                      focusable="false"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"
+                                      />
+                                    </svg>
+                                    <span
+                                      class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label"
+                                    >
+                                      Suggestions
+                                    </span>
+                                    <span
+                                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                              style="position: relative;"
+                              tabindex="0"
+                            >
+                              <div
+                                class="leaflet-pane leaflet-map-pane"
+                                style="left: 0px; top: 0px;"
+                              >
+                                <div
+                                  class="leaflet-pane leaflet-tile-pane"
+                                >
+                                  <div
+                                    class="leaflet-layer "
+                                    style="z-index: 1;"
+                                  >
+                                    <div
+                                      class="leaflet-tile-container leaflet-zoom-animated"
+                                      style="z-index: 18; left: 0px; top: 0px;"
+                                    >
+                                      <img
+                                        alt=""
+                                        class="leaflet-tile"
+                                        role="presentation"
+                                        src="https://b.tile.openstreetmap.org/13/4093/2724.png"
+                                        style="width: 256px; height: 256px; left: -244px; top: -35px;"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="leaflet-pane leaflet-overlay-pane"
+                                />
+                                <div
+                                  class="leaflet-pane leaflet-shadow-pane"
+                                />
+                                <div
+                                  class="leaflet-pane leaflet-marker-pane"
+                                />
+                                <div
+                                  class="leaflet-pane leaflet-tooltip-pane"
+                                />
+                                <div
+                                  class="leaflet-pane leaflet-popup-pane"
+                                />
+                              </div>
+                              <div
+                                class="leaflet-control-container"
+                              >
+                                <div
+                                  class="leaflet-top leaflet-left"
+                                >
+                                  <div
+                                    class="leaflet-control-zoom leaflet-bar leaflet-control"
+                                  >
+                                    <a
+                                      aria-disabled="false"
+                                      aria-label="Zoom in"
+                                      class="leaflet-control-zoom-in"
+                                      href="#"
+                                      role="button"
+                                      title="Zoom in"
+                                    >
+                                      <span
+                                        aria-hidden="true"
+                                      >
+                                        +
+                                      </span>
+                                    </a>
+                                    <a
+                                      aria-disabled="false"
+                                      aria-label="Zoom out"
+                                      class="leaflet-control-zoom-out"
+                                      href="#"
+                                      role="button"
+                                      title="Zoom out"
+                                    >
+                                      <span
+                                        aria-hidden="true"
+                                      >
+                                        −
+                                      </span>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div
+                                  class="leaflet-top leaflet-right"
+                                />
+                                <div
+                                  class="leaflet-bottom leaflet-left"
+                                />
+                                <div
+                                  class="leaflet-bottom leaflet-right"
+                                >
+                                  <div
+                                    class="leaflet-control-attribution leaflet-control"
+                                  >
+                                    <a
+                                      href="https://leafletjs.com"
+                                      title="A JavaScript library for interactive maps"
+                                    >
+                                      Leaflet
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="Toastify"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="row g-0"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="row g-0"
+        >
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="row g-0"
+            >
+              <div
+                class="col-md-12"
+              >
+                <div
+                  class="row g-0"
+                >
+                  <div
+                    class="col-md-12"
+                  >
+                    <div
+                      class="row g-0"
+                    >
+                      <div
+                        class="col-md-12"
+                      >
+                        <div
+                          class="MuiBox-root css-1ipnkmb"
+                        >
+                          <div
+                            class="row g-0 justify-content-center align-items-center text-center p-3"
+                          >
+                            <div
+                              class="col-md-5 text-white border rounded bg-primary"
+                            >
+                              <h1>
+                                Voice-To-Map
+                              </h1>
+                              <h3>
+                                Navigate map with your voice
+                              </h3>
+                            </div>
+                            <div
+                              class="col-md-3"
+                            >
+                              <button
+                                class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 mb-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
+                                tabindex="0"
+                                type="button"
+                              >
+                                Record Voice
+                                <span
+                                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                                />
+                              </button>
+                            </div>
+                            <div
+                              class="col-md-4 bg-light p-3 rounded"
+                            >
+                              <div
+                                class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+                              >
+                                <label
+                                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorInfo Mui-disabled css-rp6sv4-MuiFormLabel-root-MuiInputLabel-root"
+                                  data-shrink="false"
+                                  for=":r0:"
+                                  id=":r0:-label"
+                                >
+                                  Detected Input
+                                </label>
+                                <div
+                                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorInfo Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl css-1udmear-MuiInputBase-root-MuiOutlinedInput-root"
+                                >
+                                  <input
+                                    aria-invalid="false"
+                                    class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                                    disabled=""
+                                    id=":r0:"
+                                    type="text"
+                                    value=""
+                                  />
+                                  <fieldset
+                                    aria-hidden="true"
+                                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                                  >
+                                    <legend
+                                      class="css-1ftyaf0"
+                                    >
+                                      <span>
+                                        Detected Input
+                                      </span>
+                                    </legend>
+                                  </fieldset>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="row g-0"
+                  id="layout-body"
+                >
+                  <div
+                    class="col-md-12"
+                  >
+                    <div
+                      class="row g-0"
+                    >
+                      <div
+                        class="col-md-12"
+                      >
+                        <div>
+                          <div
+                            class="row g-0"
+                          >
+                            <div
+                              class="col-md-12"
+                            >
+                              <div
+                                class="MuiBottomNavigation-root css-16lloyr-MuiBottomNavigation-root"
+                              >
+                                <button
+                                  class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root"
+                                  tabindex="0"
+                                  type="button"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                    data-testid="HistoryIcon"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
+                                    />
+                                  </svg>
+                                  <span
+                                    class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label"
+                                  >
+                                    History
+                                  </span>
+                                  <span
+                                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                                  />
+                                </button>
+                                <button
+                                  class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root"
+                                  tabindex="0"
+                                  type="button"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                                    data-testid="ListIcon"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"
+                                    />
+                                  </svg>
+                                  <span
+                                    class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label"
+                                  >
+                                    Suggestions
+                                  </span>
+                                  <span
+                                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                                  />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="leaflet-container leaflet-touch leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                            style="position: relative;"
+                            tabindex="0"
+                          >
+                            <div
+                              class="leaflet-pane leaflet-map-pane"
+                              style="left: 0px; top: 0px;"
+                            >
+                              <div
+                                class="leaflet-pane leaflet-tile-pane"
+                              >
+                                <div
+                                  class="leaflet-layer "
+                                  style="z-index: 1;"
+                                >
+                                  <div
+                                    class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; left: 0px; top: 0px;"
+                                  >
+                                    <img
+                                      alt=""
+                                      class="leaflet-tile"
+                                      role="presentation"
+                                      src="https://b.tile.openstreetmap.org/13/4093/2724.png"
+                                      style="width: 256px; height: 256px; left: -244px; top: -35px;"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="leaflet-pane leaflet-overlay-pane"
+                              />
+                              <div
+                                class="leaflet-pane leaflet-shadow-pane"
+                              />
+                              <div
+                                class="leaflet-pane leaflet-marker-pane"
+                              />
+                              <div
+                                class="leaflet-pane leaflet-tooltip-pane"
+                              />
+                              <div
+                                class="leaflet-pane leaflet-popup-pane"
+                              />
+                            </div>
+                            <div
+                              class="leaflet-control-container"
+                            >
+                              <div
+                                class="leaflet-top leaflet-left"
+                              >
+                                <div
+                                  class="leaflet-control-zoom leaflet-bar leaflet-control"
+                                >
+                                  <a
+                                    aria-disabled="false"
+                                    aria-label="Zoom in"
+                                    class="leaflet-control-zoom-in"
+                                    href="#"
+                                    role="button"
+                                    title="Zoom in"
+                                  >
+                                    <span
+                                      aria-hidden="true"
+                                    >
+                                      +
+                                    </span>
+                                  </a>
+                                  <a
+                                    aria-disabled="false"
+                                    aria-label="Zoom out"
+                                    class="leaflet-control-zoom-out"
+                                    href="#"
+                                    role="button"
+                                    title="Zoom out"
+                                  >
+                                    <span
+                                      aria-hidden="true"
+                                    >
+                                      −
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="leaflet-top leaflet-right"
+                              />
+                              <div
+                                class="leaflet-bottom leaflet-left"
+                              />
+                              <div
+                                class="leaflet-bottom leaflet-right"
+                              >
+                                <div
+                                  class="leaflet-control-attribution leaflet-control"
+                                >
+                                  <a
+                                    href="https://leafletjs.com"
+                                    title="A JavaScript library for interactive maps"
+                                  >
+                                    Leaflet
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="Toastify"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

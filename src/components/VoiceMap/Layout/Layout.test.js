@@ -1,33 +1,33 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import Layout from './Layout'
 
 test('should render component', () => {
-    render(
+    const container = render(
         <Layout
             header={<div>header</div>}
             body={<div>body</div>}
         />
     )
 
-    expect(screen.getAllByTestId('layout')).toBeTruthy()
+    expect(container).toMatchSnapshot()
 })
 
 test('should render Header', () => {
-    render(
+    const container = render(
         <Layout.Header>
             <div>Header</div>
         </Layout.Header>
     )
 
-    expect(screen.getAllByTestId('layout-header')).toBeTruthy()
+    expect(container).toMatchSnapshot()
 })
 
 test('should render Body', () => {
-    render(
+    const container = render(
         <Layout.Body>
             <div>Body</div>
         </Layout.Body>
     )
 
-    expect(screen.getAllByTestId('layout-body')).toBeTruthy()
+    expect(container).toMatchSnapshot()
 })

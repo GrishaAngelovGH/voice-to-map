@@ -1,9 +1,9 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import Menu from './Menu'
 
 test('should render component', () => {
-    render(<Menu />)
+    const container = render(<Menu />)
 
-    expect(screen.getAllByTestId('menu')).toBeTruthy()
+    expect(container).toMatchSnapshot()
 })

@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store'
 
@@ -32,11 +32,11 @@ const store = mockStore({
 })
 
 test('should render component', () => {
-    render(
+    const container = render(
         <Provider store={store}>
             <History />
         </Provider>
     )
 
-    expect(screen.getAllByTestId('history')).toBeTruthy()
+    expect(container).toMatchSnapshot()
 })

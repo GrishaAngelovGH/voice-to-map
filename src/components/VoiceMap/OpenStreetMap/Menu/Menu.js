@@ -24,7 +24,7 @@ const Menu = ({ disableHistory }) => {
     }
 
     return (
-        <div className="row g-0" data-testid="menu">
+        <div className="row g-0">
             <div className="col-md-12">
                 <BottomNavigation showLabels={true} onChange={handleChange}>
                     <BottomNavigationAction label="History" icon={<HistoryIcon />} />

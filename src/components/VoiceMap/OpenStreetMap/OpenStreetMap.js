@@ -45,7 +45,7 @@ const OpenStreetMap = () => {
     }, [lastLocation, dispatch])
 
     return (
-        <div data-testid="osm">
+        <div>
             <Menu disableHistory={!locations.length} />
 
             {

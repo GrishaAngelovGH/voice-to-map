@@ -45,7 +45,7 @@ const VoiceSearch = () => {
 
     return (
         <Fragment>
-            <div className="col-md-3" data-testid="voice-search">
+            <div className="col-md-3">
                 <Fab className="mt-1 mb-1" variant="extended" color={!isRecoding ? "inherit" : "warning"} onClick={handleClick}>
                     {!isRecoding ? "Record Voice" : "Recording..."}
                 </Fab>

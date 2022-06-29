@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import { Provider } from 'react-redux'
 import configureStore from 'redux-mock-store'
 
@@ -8,11 +8,11 @@ const mockStore = configureStore()
 const store = mockStore({ locations: { lastLocation: '', history: [] } })
 
 test('should render component', () => {
-    render(
+    const container = render(
         <Provider store={store}>
             <OpenStreetMap />
         </Provider>
     )
 
-    expect(screen.getAllByTestId('osm')).toBeTruthy()
+    expect(container).toMatchSnapshot()
 })
