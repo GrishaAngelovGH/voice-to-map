@@ -7,13 +7,12 @@ import VoiceMap from './VoiceMap'
 const mockStore = configureStore()
 const store = mockStore({ locations: { lastLocation: '', history: [] } })
 
-test('should render component', () => {
-    const container = render(
+test('should render VoiceMap component', () => {
+    const view = render(
         <Provider store={store}>
             <VoiceMap />
         </Provider>
     )
 
-    expect(container).toMatchSnapshot()
-
+    expect(view).toMatchSnapshot()
 })

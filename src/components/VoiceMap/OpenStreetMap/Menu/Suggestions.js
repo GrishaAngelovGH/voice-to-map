@@ -16,7 +16,7 @@ import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver'
 import CloseIcon from '@mui/icons-material/Close'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction="up" ref={ref} {...props} />
+    return <Slide direction='up' ref={ref} {...props} />
 })
 
 const suggestions = [
@@ -34,17 +34,17 @@ const suggestions = [
 
 const Suggestions = ({ onClose }) => (
     <Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
-        <AppBar sx={{ position: 'sticky' }} color="secondary">
+        <AppBar sx={{ position: 'sticky' }} color='secondary'>
             <Toolbar>
                 <IconButton
-                    edge="start"
-                    color="inherit"
+                    edge='start'
+                    color='inherit'
                     onClick={onClose}
-                    aria-label="close"
+                    aria-label='close'
                 >
                     <CloseIcon />
                 </IconButton>
-                <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                <Typography sx={{ ml: 2, flex: 1 }} variant='h6' component='div'>
                     Voice Search Suggestions
                 </Typography>
             </Toolbar>

@@ -1,4 +1,4 @@
-import L from 'leaflet';
+import L from 'leaflet'
 import lefletIcon from 'leaflet/dist/images/marker-icon-2x.png'
 
 const MarkerIcon = new L.Icon({

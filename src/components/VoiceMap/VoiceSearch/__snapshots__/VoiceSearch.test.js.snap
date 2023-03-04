@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render component 1`] = `
+exports[`should render VoiceSearch component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="col-md-3"
+        class="col-md-4"
       >
         <button
-          class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 mb-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
+          class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
           tabindex="0"
           type="button"
         >
@@ -63,10 +63,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="col-md-3"
+      class="col-md-4"
     >
       <button
-        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 mb-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
+        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
         tabindex="0"
         type="button"
       >

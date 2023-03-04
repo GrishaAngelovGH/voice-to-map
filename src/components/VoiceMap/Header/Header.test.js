@@ -4,15 +4,15 @@ import configureStore from 'redux-mock-store'
 
 import Header from './Header'
 
-test('should render component', () => {
+test('should render Header component', () => {
     const mockStore = configureStore()
     const store = mockStore({ locations: { lastLocation: '', history: [] } })
 
-    const container = render(
+    const view = render(
         <Provider store={store}>
             <Header />
         </Provider>
     )
 
-    expect(container).toMatchSnapshot()
+    expect(view).toMatchSnapshot()
 })

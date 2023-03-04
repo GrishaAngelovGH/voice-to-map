@@ -2,8 +2,8 @@ import { render } from '@testing-library/react'
 
 import Suggestions from './Suggestions'
 
-test('should render component', () => {
-    const container = render(<Suggestions />)
+test('should render Suggestions component', () => {
+    const view = render(<Suggestions />)
 
-    expect(container).toMatchSnapshot()
+    expect(view).toMatchSnapshot()
 })

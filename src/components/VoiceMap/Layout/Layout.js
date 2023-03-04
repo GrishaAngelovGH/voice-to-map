@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import './Layout.css'
 
 const Layout = ({ header, body }) => (
-    <div className="row g-0">
-        <div className="col-md-12">
+    <div className='row g-0'>
+        <div className='col-md-12'>
             <Layout.Header>
                 {header}
             </Layout.Header>
@@ -16,16 +16,16 @@ const Layout = ({ header, body }) => (
 )
 
 Layout.Header = ({ children }) => (
-    <div className="row g-0">
-        <div className="col-md-12">
+    <div className='row g-0'>
+        <div className='col-md-12'>
             {children}
         </div>
     </div>
 )
 
 Layout.Body = ({ children }) => (
-    <div id="layout-body" className="row g-0">
-        <div className="col-md-12">
+    <div id='layout-body' className='row g-0'>
+        <div className='col-md-12'>
             {children}
         </div>
     </div>

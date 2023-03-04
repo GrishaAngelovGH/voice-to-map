@@ -17,7 +17,7 @@ import RoomIcon from '@mui/icons-material/Room'
 import CloseIcon from '@mui/icons-material/Close'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction="up" ref={ref} {...props} />
+    return <Slide direction='up' ref={ref} {...props} />
 })
 
 const History = ({ onClose }) => {
@@ -28,14 +28,14 @@ const History = ({ onClose }) => {
             <AppBar sx={{ position: 'sticky' }}>
                 <Toolbar>
                     <IconButton
-                        edge="start"
-                        color="inherit"
+                        edge='start'
+                        color='inherit'
                         onClick={onClose}
-                        aria-label="close"
+                        aria-label='close'
                     >
                         <CloseIcon />
                     </IconButton>
-                    <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                    <Typography sx={{ ml: 2, flex: 1 }} variant='h6' component='div'>
                         History
                     </Typography>
                 </Toolbar>

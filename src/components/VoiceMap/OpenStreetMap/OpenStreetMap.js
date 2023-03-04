@@ -50,7 +50,7 @@ const OpenStreetMap = () => {
 
             {
                 locations.length > 0 && (
-                    <Alert severity="success" className="justify-content-center">
+                    <Alert severity='success' className='justify-content-center'>
                         Found {locations.length} results
                     </Alert>
                 )
@@ -62,7 +62,7 @@ const OpenStreetMap = () => {
                     locations.map(v => (
                         <Marker key={v.place_id} position={[v.lat, v.lon]} icon={MarkerIcon}>
                             <Popup>
-                                <div className="fw-bold">{v.display_name}</div>
+                                <div className='fw-bold'>{v.display_name}</div>
                             </Popup>
                         </Marker>
                     ))

@@ -7,12 +7,12 @@ import VoiceSearch from './VoiceSearch'
 const mockStore = configureStore()
 const store = mockStore({ locations: { lastLocation: '', history: [] } })
 
-test('should render component', () => {
-    const container = render(
+test('should render VoiceSearch component', () => {
+    const view = render(
         <Provider store={store}>
             <VoiceSearch />
         </Provider>
     )
 
-    expect(container).toMatchSnapshot()
+    expect(view).toMatchSnapshot()
 })

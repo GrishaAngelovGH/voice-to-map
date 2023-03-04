@@ -24,11 +24,11 @@ const Menu = ({ disableHistory }) => {
     }
 
     return (
-        <div className="row g-0">
-            <div className="col-md-12">
+        <div className='row g-0'>
+            <div className='col-md-12'>
                 <BottomNavigation showLabels={true} onChange={handleChange}>
-                    <BottomNavigationAction label="History" icon={<HistoryIcon />} />
-                    <BottomNavigationAction label="Suggestions" icon={<ListIcon />} />
+                    <BottomNavigationAction label='History' icon={<HistoryIcon />} />
+                    <BottomNavigationAction label='Suggestions' icon={<ListIcon />} />
                 </BottomNavigation>
 
                 <Drawer open={showHistory || showSuggestions} anchor={'top'} onClose={handleClose}>

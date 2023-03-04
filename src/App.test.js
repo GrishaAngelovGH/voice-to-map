@@ -7,11 +7,11 @@ test('should render component', () => {
   const mockStore = configureStore()
   const store = mockStore({ locations: { lastLocation: '' } })
 
-  const container = render(
+  const view = render(
     <Provider store={store}>
       <App />
     </Provider>
   )
 
-  expect(container).toMatchSnapshot()
+  expect(view).toMatchSnapshot()
 })

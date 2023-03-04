@@ -1,31 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render component 1`] = `
+exports[`should render Header component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="MuiBox-root css-1ipnkmb"
+        class="MuiBox-root css-mq2wc9"
       >
         <div
           class="row g-0 justify-content-center align-items-center text-center p-3"
         >
           <div
-            class="col-md-5 text-white border rounded bg-primary"
+            class="col-md-4 text-white border rounded bg-primary"
           >
-            <h1>
+            <h1
+              class="m-0"
+            >
               Voice-To-Map
             </h1>
-            <h3>
+            <h3
+              class="m-0"
+            >
               Navigate map with your voice
             </h3>
           </div>
           <div
-            class="col-md-3"
+            class="col-md-4"
           >
             <button
-              class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 mb-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
+              class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
               tabindex="0"
               type="button"
             >
@@ -81,26 +85,30 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiBox-root css-1ipnkmb"
+      class="MuiBox-root css-mq2wc9"
     >
       <div
         class="row g-0 justify-content-center align-items-center text-center p-3"
       >
         <div
-          class="col-md-5 text-white border rounded bg-primary"
+          class="col-md-4 text-white border rounded bg-primary"
         >
-          <h1>
+          <h1
+            class="m-0"
+          >
             Voice-To-Map
           </h1>
-          <h3>
+          <h3
+            class="m-0"
+          >
             Navigate map with your voice
           </h3>
         </div>
         <div
-          class="col-md-3"
+          class="col-md-4"
         >
           <button
-            class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 mb-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
+            class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
             tabindex="0"
             type="button"
           >

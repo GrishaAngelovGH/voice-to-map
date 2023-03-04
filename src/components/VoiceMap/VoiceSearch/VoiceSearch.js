@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import Fab from '@mui/material/Fab'
 import TextField from '@mui/material/TextField'
 
-import recognition from "../recognition"
+import recognition from '../recognition'
 import { addLocation } from '../../../slices/locationSlice'
 
 const VoiceSearch = () => {
@@ -45,13 +45,13 @@ const VoiceSearch = () => {
 
     return (
         <Fragment>
-            <div className="col-md-3">
-                <Fab className="mt-1 mb-1" variant="extended" color={!isRecoding ? "inherit" : "warning"} onClick={handleClick}>
-                    {!isRecoding ? "Record Voice" : "Recording..."}
+            <div className='col-md-4'>
+                <Fab className='mt-1' variant='extended' color={!isRecoding ? 'inherit' : 'warning'} onClick={handleClick}>
+                    {!isRecoding ? 'Record Voice' : 'Recording...'}
                 </Fab>
             </div>
-            <div className="col-md-4 bg-light p-3 rounded">
-                <TextField label="Detected Input" variant="outlined" color='info' value={detectedInput} disabled fullWidth={true} />
+            <div className='col-md-4 bg-light p-3 rounded'>
+                <TextField label='Detected Input' variant='outlined' color='info' value={detectedInput} disabled fullWidth={true} />
             </div>
         </Fragment>
     )
