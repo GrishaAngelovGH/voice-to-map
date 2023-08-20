@@ -4,16 +4,4 @@ Front-end project implementing visualization of geographical map locations by vo
 
 ## The front-end project is using the following technologies:
 
-* Initial structure is created with **create-react-app**
-* Integrated **ReactJS 18**
-* Integrated **reduxjs/toolkit**
-* Integrated **react-redux**
-* Integrated **redux-mock-store**
-* Integrated **react-leaflet**
-* Integrated **axios**
-* Integrated **material ui**
-* Integrated **material ui icons**
-* Integrated **bootstrap 5**
-* Integrated notifications with **react-toastify**
-* Integrated **Web Speech API**
-* Integrated **LocationIQ's Forward Geocoding API**
+<img src="https://img.shields.io/badge/create--react--app-%23563D7C.svg?style=flat&logo=create-react-app&color=white" height="30"> <img src="https://img.shields.io/badge/React.JS-%23563D7C.svg?style=flat&logo=react&color=white" height="30"> <img src="https://img.shields.io/badge/redux--toolkit-%23593d88.svg?style=flat&logo=redux&color=white&logoColor=purple" height="30"> <img src="https://img.shields.io/badge/react--redux-%23593d88.svg?style=flat&logo=redux&color=white&logoColor=purple" height="30"> <img src="https://img.shields.io/badge/redux--mock--store-%23593d88.svg?style=flat&logo=redux&color=white&logoColor=purple" height="30"> <img src="https://img.shields.io/badge/react--leaflet-311C87?style=flat&logo=leaflet&color=white&logoColor=green" height="30"> <img src="https://img.shields.io/badge/Axios-%231572B6.svg?style=flat&logo=axios&color=white&logoColor=blue" height="30"> <img src="https://img.shields.io/badge/MUI-311C87?style=flat&logo=mui&color=white" height="30"> <img src="https://img.shields.io/badge/MUI--Icons-311C87?style=flat&logo=mui&color=white" height="30"> <img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&color=white&logoColor=purple" height="30"> <img src="https://img.shields.io/badge/react--toastify-311C87?style=flat&color=white" height="30"> <img src="https://img.shields.io/badge/web--speech--api-311C87?style=flat&color=white" height="30"> <img src="https://img.shields.io/badge/LocationIQ's%20Forward%20Geocoding%20API-311C87?style=flat&color=white" height="30">
