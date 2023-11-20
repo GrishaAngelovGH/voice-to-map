@@ -21,13 +21,13 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const suggestions = [
     'Bulgaria Sofia National Palace of Culture',
-    'Bulgaria Sofia National Sports Academy',
-    'Bulgaria Sofia History Museum',
+    'Bulgaria Sofia Zoo',
+    'Bulgaria Sofia National History Museum',
     'London Palace of Westminster',
     'London Buckingham Palace',
     'London Piccadilly Circus',
     'London Big Ben',
-    'London Tower Bridge',
+    'Tower Bridge London',
     'Germany Brandenburg Gate',
     'France Eiffel Tower'
 ]
