@@ -1,7 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`should render VoiceMap component 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -47,24 +47,21 @@ Object {
                         class="col-md-4"
                       >
                         <button
-                          class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
+                          class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 css-5w0vct-MuiButtonBase-root-MuiFab-root"
                           tabindex="0"
                           type="button"
                         >
                           Record Voice
-                          <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                          />
                         </button>
                       </div>
                       <div
                         class="col-md-4 bg-light p-3 rounded"
                       >
                         <div
-                          class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+                          class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
                         >
                           <label
-                            class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorInfo Mui-disabled css-rp6sv4-MuiFormLabel-root-MuiInputLabel-root"
+                            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorInfo Mui-disabled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-ipdm92-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="false"
                             for=":r0:"
                             id=":r0:-label"
@@ -72,11 +69,11 @@ Object {
                             Detected Input
                           </label>
                           <div
-                            class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorInfo Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl css-1udmear-MuiInputBase-root-MuiOutlinedInput-root"
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorInfo Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl css-18j0pu3-MuiInputBase-root-MuiOutlinedInput-root"
                           >
                             <input
                               aria-invalid="false"
-                              class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                              class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
                               disabled=""
                               id=":r0:"
                               type="text"
@@ -84,10 +81,10 @@ Object {
                             />
                             <fieldset
                               aria-hidden="true"
-                              class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                              class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
                             >
                               <legend
-                                class="css-1ftyaf0"
+                                class="css-81qg8w"
                               >
                                 <span>
                                   Detected Input
@@ -116,57 +113,51 @@ Object {
                         class="col-md-12"
                       >
                         <div
-                          class="MuiBottomNavigation-root css-16lloyr-MuiBottomNavigation-root"
+                          class="MuiBottomNavigation-root css-7ax0nd-MuiBottomNavigation-root"
                         >
                           <button
-                            class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root"
+                            class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
                             tabindex="0"
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                               data-testid="HistoryIcon"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
+                                d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9m-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8z"
                               />
                             </svg>
                             <span
-                              class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label"
+                              class="MuiBottomNavigationAction-label css-1kcvi62-MuiBottomNavigationAction-label"
                             >
                               History
                             </span>
-                            <span
-                              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                            />
                           </button>
                           <button
-                            class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root"
+                            class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
                             tabindex="0"
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                               data-testid="ListIcon"
                               focusable="false"
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"
+                                d="M3 13h2v-2H3zm0 4h2v-2H3zm0-8h2V7H3zm4 4h14v-2H7zm0 4h14v-2H7zM7 7v2h14V7z"
                               />
                             </svg>
                             <span
-                              class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label"
+                              class="MuiBottomNavigationAction-label css-1kcvi62-MuiBottomNavigationAction-label"
                             >
                               Suggestions
                             </span>
-                            <span
-                              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                            />
                           </button>
                         </div>
                       </div>
@@ -282,7 +273,11 @@ Object {
               </div>
             </div>
           </div>
-          <div
+          <section
+            aria-atomic="false"
+            aria-label="Notifications Alt+T"
+            aria-live="polite"
+            aria-relevant="additions text"
             class="Toastify"
           />
         </div>
@@ -332,24 +327,21 @@ Object {
                       class="col-md-4"
                     >
                       <button
-                        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 css-16pfgg4-MuiButtonBase-root-MuiFab-root"
+                        class="MuiButtonBase-root MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit MuiFab-root MuiFab-extended MuiFab-sizeLarge MuiFab-colorInherit mt-1 css-5w0vct-MuiButtonBase-root-MuiFab-root"
                         tabindex="0"
                         type="button"
                       >
                         Record Voice
-                        <span
-                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                        />
                       </button>
                     </div>
                     <div
                       class="col-md-4 bg-light p-3 rounded"
                     >
                       <div
-                        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+                        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
                       >
                         <label
-                          class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorInfo Mui-disabled css-rp6sv4-MuiFormLabel-root-MuiInputLabel-root"
+                          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorInfo Mui-disabled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-ipdm92-MuiFormLabel-root-MuiInputLabel-root"
                           data-shrink="false"
                           for=":r0:"
                           id=":r0:-label"
@@ -357,11 +349,11 @@ Object {
                           Detected Input
                         </label>
                         <div
-                          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorInfo Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl css-1udmear-MuiInputBase-root-MuiOutlinedInput-root"
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorInfo Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl css-18j0pu3-MuiInputBase-root-MuiOutlinedInput-root"
                         >
                           <input
                             aria-invalid="false"
-                            class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                            class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
                             disabled=""
                             id=":r0:"
                             type="text"
@@ -369,10 +361,10 @@ Object {
                           />
                           <fieldset
                             aria-hidden="true"
-                            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
                           >
                             <legend
-                              class="css-1ftyaf0"
+                              class="css-81qg8w"
                             >
                               <span>
                                 Detected Input
@@ -401,57 +393,51 @@ Object {
                       class="col-md-12"
                     >
                       <div
-                        class="MuiBottomNavigation-root css-16lloyr-MuiBottomNavigation-root"
+                        class="MuiBottomNavigation-root css-7ax0nd-MuiBottomNavigation-root"
                       >
                         <button
-                          class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root"
+                          class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
                           tabindex="0"
                           type="button"
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                             data-testid="HistoryIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
                             <path
-                              d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
+                              d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9m-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8z"
                             />
                           </svg>
                           <span
-                            class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label"
+                            class="MuiBottomNavigationAction-label css-1kcvi62-MuiBottomNavigationAction-label"
                           >
                             History
                           </span>
-                          <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                          />
                         </button>
                         <button
-                          class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root"
+                          class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
                           tabindex="0"
                           type="button"
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
                             data-testid="ListIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
                             <path
-                              d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"
+                              d="M3 13h2v-2H3zm0 4h2v-2H3zm0-8h2V7H3zm4 4h14v-2H7zm0 4h14v-2H7zM7 7v2h14V7z"
                             />
                           </svg>
                           <span
-                            class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label"
+                            class="MuiBottomNavigationAction-label css-1kcvi62-MuiBottomNavigationAction-label"
                           >
                             Suggestions
                           </span>
-                          <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                          />
                         </button>
                       </div>
                     </div>
@@ -567,7 +553,11 @@ Object {
             </div>
           </div>
         </div>
-        <div
+        <section
+          aria-atomic="false"
+          aria-label="Notifications Alt+T"
+          aria-live="polite"
+          aria-relevant="additions text"
           class="Toastify"
         />
       </div>
