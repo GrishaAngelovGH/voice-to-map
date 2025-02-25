@@ -1,11 +1,10 @@
 import { render } from '@testing-library/react'
 import { Provider } from 'react-redux'
-import configureStore from 'redux-mock-store'
+import { setupStore } from 'store'
 
 import History from './History'
 
-const mockStore = configureStore()
-const store = mockStore({
+const store = setupStore({
 	locations: {
 		lastLocation: '',
 		history: [

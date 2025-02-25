@@ -7,7 +7,8 @@ export default defineConfig({
   resolve: {
     alias: {
       components: "/src/components",
-      slices: "/src/slices"
+      slices: "/src/slices",
+      store: "/src/store"
     }
   },
   test: {

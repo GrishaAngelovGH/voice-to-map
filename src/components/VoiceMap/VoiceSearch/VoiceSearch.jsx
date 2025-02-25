@@ -6,7 +6,7 @@ import Fab from '@mui/material/Fab'
 import TextField from '@mui/material/TextField'
 
 import recognition from '../recognition'
-import { addLocation } from '../../../slices/locationSlice'
+import { addLocation } from 'slices/locationSlice'
 
 const VoiceSearch = () => {
 	const [isRecoding, setIsRecording] = useState(false)

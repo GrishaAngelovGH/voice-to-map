@@ -12,7 +12,7 @@ import CenterView from './CenterView'
 import Alert from '@mui/material/Alert'
 
 import './OpenStreetMap.css'
-import { addToHistory } from '../../../slices/locationSlice'
+import { addToHistory } from 'slices/locationSlice'
 
 const map = {
 	lat: 51.505,
