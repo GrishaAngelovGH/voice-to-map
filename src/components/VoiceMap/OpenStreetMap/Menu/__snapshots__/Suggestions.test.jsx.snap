@@ -25,7 +25,7 @@ exports[`should render Suggestions component 1`] = `
       <div
         class="MuiDialog-container MuiDialog-scrollPaper css-19do60a-MuiDialog-container"
         role="presentation"
-        style="webkit-transform: none; transform: none; webkit-transition: -webkit-transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms; transition: transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;"
+        style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
         tabindex="-1"
       >
         <div
@@ -71,7 +71,7 @@ exports[`should render Suggestions component 1`] = `
             class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -106,7 +106,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -141,7 +141,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -176,7 +176,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -211,7 +211,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -246,7 +246,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -281,7 +281,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -316,7 +316,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -351,7 +351,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
@@ -386,7 +386,7 @@ exports[`should render Suggestions component 1`] = `
               class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
             />
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"

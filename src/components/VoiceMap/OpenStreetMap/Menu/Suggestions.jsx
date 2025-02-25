@@ -10,14 +10,9 @@ import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
 import Divider from '@mui/material/Divider'
-import Slide from '@mui/material/Slide'
 
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver'
 import CloseIcon from '@mui/icons-material/Close'
-
-const Transition = React.forwardRef(function Transition(props, ref) {
-	return <Slide direction='up' ref={ref} {...props} />
-})
 
 const suggestions = [
 	'Bulgaria Sofia National Palace of Culture',
@@ -33,7 +28,7 @@ const suggestions = [
 ]
 
 const Suggestions = ({ onClose }) => (
-	<Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
+	<Dialog fullScreen={true} open={true}>
 		<AppBar sx={{ position: 'sticky' }} color='secondary'>
 			<Toolbar>
 				<IconButton
@@ -53,7 +48,7 @@ const Suggestions = ({ onClose }) => (
 			{
 				suggestions.map((v, i) => (
 					<Fragment key={i}>
-						<ListItem button>
+						<ListItem>
 							<Fragment >
 								<ListItemText primary={<span><RecordVoiceOverIcon /> {v}</span>} />
 							</Fragment>

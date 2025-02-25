@@ -71,7 +71,7 @@ exports[`should render History component 1`] = `
             class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-z2qibm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
             >
               <div
                 class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"

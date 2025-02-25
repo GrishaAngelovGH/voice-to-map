@@ -11,7 +11,6 @@ import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
 import Divider from '@mui/material/Divider'
-import Slide from '@mui/material/Slide'
 
 import RoomIcon from '@mui/icons-material/Room'
 import CloseIcon from '@mui/icons-material/Close'
@@ -43,7 +42,7 @@ const History = ({ onClose }) => {
 				{
 					history.map((v, i) => (
 						<Fragment key={v.place_id}>
-							<ListItem button>
+							<ListItem>
 								<ListItemText primary={<span>{`#${i + 1}`} <RoomIcon /> {v.display_name}</span>} />
 							</ListItem>
 							<Divider />
