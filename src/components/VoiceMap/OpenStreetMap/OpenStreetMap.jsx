@@ -37,7 +37,7 @@ const OpenStreetMap = () => {
                 setLocations(data)
                 dispatch(addToHistory(data))
             }
-            catch (err) {
+            catch {
                 toast.error('An unexpected error has occurred, please try again', { theme: 'colored' })
             }
         }
