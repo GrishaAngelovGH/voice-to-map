@@ -16,15 +16,14 @@ import Slide from '@mui/material/Slide'
 import RoomIcon from '@mui/icons-material/Room'
 import CloseIcon from '@mui/icons-material/Close'
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-	return <Slide direction='up' ref={ref} {...props} />
-})
-
 const History = ({ onClose }) => {
 	const history = useSelector(state => state.locations.history)
 
 	return (
-		<Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
+		<Dialog
+			fullScreen={true}
+			open={true}
+		>
 			<AppBar sx={{ position: 'sticky' }}>
 				<Toolbar>
 					<IconButton
