@@ -29,7 +29,8 @@ const OpenStreetMap = () => {
     useEffect(() => {
         const fetchLocation = async () => {
             try {
-                const key = process.env.REACT_APP_DEMO_GEOCODING_API_ACCESS_TOKEN
+                const key = import.meta.env.VITE_REACT_APP_DEMO_GEOCODING_API_ACCESS_TOKEN
+
                 const url = `https://eu1.locationiq.com/v1/search.php?key=${key}&q=${lastLocation}&format=json`
                 const { data } = await axios.get(url)
 
