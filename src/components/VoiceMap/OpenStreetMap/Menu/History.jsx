@@ -17,43 +17,43 @@ import RoomIcon from '@mui/icons-material/Room'
 import CloseIcon from '@mui/icons-material/Close'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction='up' ref={ref} {...props} />
+	return <Slide direction='up' ref={ref} {...props} />
 })
 
 const History = ({ onClose }) => {
-    const history = useSelector(state => state.locations.history)
+	const history = useSelector(state => state.locations.history)
 
-    return (
-        <Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
-            <AppBar sx={{ position: 'sticky' }}>
-                <Toolbar>
-                    <IconButton
-                        edge='start'
-                        color='inherit'
-                        onClick={onClose}
-                        aria-label='close'
-                    >
-                        <CloseIcon />
-                    </IconButton>
-                    <Typography sx={{ ml: 2, flex: 1 }} variant='h6' component='div'>
-                        History
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-            <List>
-                {
-                    history.map((v, i) => (
-                        <Fragment key={v.place_id}>
-                            <ListItem button>
-                                <ListItemText primary={<span>{`#${i + 1}`} <RoomIcon /> {v.display_name}</span>} />
-                            </ListItem>
-                            <Divider />
-                        </Fragment>
-                    ))
-                }
-            </List>
-        </Dialog>
-    )
+	return (
+		<Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
+			<AppBar sx={{ position: 'sticky' }}>
+				<Toolbar>
+					<IconButton
+						edge='start'
+						color='inherit'
+						onClick={onClose}
+						aria-label='close'
+					>
+						<CloseIcon />
+					</IconButton>
+					<Typography sx={{ ml: 2, flex: 1 }} variant='h6' component='div'>
+						History
+					</Typography>
+				</Toolbar>
+			</AppBar>
+			<List>
+				{
+					history.map((v, i) => (
+						<Fragment key={v.place_id}>
+							<ListItem button>
+								<ListItemText primary={<span>{`#${i + 1}`} <RoomIcon /> {v.display_name}</span>} />
+							</ListItem>
+							<Divider />
+						</Fragment>
+					))
+				}
+			</List>
+		</Dialog>
+	)
 }
 
 export default History

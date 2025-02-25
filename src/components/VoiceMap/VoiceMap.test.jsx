@@ -8,11 +8,11 @@ const mockStore = configureStore()
 const store = mockStore({ locations: { lastLocation: '', history: [] } })
 
 test('should render VoiceMap component', () => {
-    const view = render(
-        <Provider store={store}>
-            <VoiceMap />
-        </Provider>
-    )
+	const view = render(
+		<Provider store={store}>
+			<VoiceMap />
+		</Provider>
+	)
 
-    expect(view).toMatchSnapshot()
+	expect(view).toMatchSnapshot()
 })

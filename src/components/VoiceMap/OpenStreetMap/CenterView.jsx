@@ -1,16 +1,16 @@
 import { useMap } from 'react-leaflet'
 
 const CenterView = ({ locations }) => {
-    const m = useMap()
+	const m = useMap()
 
-    if (locations.length > 0) {
-        m.setView([locations[0].lat, locations[0].lon], 15)
-    }
+	if (locations.length > 0) {
+		m.setView([locations[0].lat, locations[0].lon], 15)
+	}
 
-    // https://github.com/facebook/react/blob/main/CHANGELOG.md#react-2
-    // Components can now render undefined
+	// https://github.com/facebook/react/blob/main/CHANGELOG.md#react-2
+	// Components can now render undefined
 
-    return undefined
+	return undefined
 }
 
 export default CenterView

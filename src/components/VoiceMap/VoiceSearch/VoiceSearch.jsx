@@ -9,52 +9,52 @@ import recognition from '../recognition'
 import { addLocation } from '../../../slices/locationSlice'
 
 const VoiceSearch = () => {
-    const [isRecoding, setIsRecording] = useState(false)
-    const [detectedInput, setDetectedInput] = useState('')
-    const dispatch = useDispatch()
+	const [isRecoding, setIsRecording] = useState(false)
+	const [detectedInput, setDetectedInput] = useState('')
+	const dispatch = useDispatch()
 
-    const handleClick = () => {
-        if (!isRecoding) {
-            recognition.start()
-            setIsRecording(true)
-        }
-    }
+	const handleClick = () => {
+		if (!isRecoding) {
+			recognition.start()
+			setIsRecording(true)
+		}
+	}
 
-    useEffect(() => {
-        recognition.onresult = event => {
-            const input = event.results[0][0].transcript
+	useEffect(() => {
+		recognition.onresult = event => {
+			const input = event.results[0][0].transcript
 
-            setDetectedInput(input)
-            dispatch(addLocation(input))
-        }
+			setDetectedInput(input)
+			dispatch(addLocation(input))
+		}
 
-        recognition.onerror = ({ error }) => {
-            if (error === 'no-speech') {
-                setDetectedInput('No detected speech')
-                toast.error('No detected speech', { theme: 'colored' })
-            }
-            recognition.stop()
-            setIsRecording(false)
-        }
+		recognition.onerror = ({ error }) => {
+			if (error === 'no-speech') {
+				setDetectedInput('No detected speech')
+				toast.error('No detected speech', { theme: 'colored' })
+			}
+			recognition.stop()
+			setIsRecording(false)
+		}
 
-        recognition.onspeechend = () => {
-            recognition.stop()
-            setIsRecording(false)
-        }
-    }, [dispatch])
+		recognition.onspeechend = () => {
+			recognition.stop()
+			setIsRecording(false)
+		}
+	}, [dispatch])
 
-    return (
-        <Fragment>
-            <div className='col-md-4'>
-                <Fab className='mt-1' variant='extended' color={!isRecoding ? 'inherit' : 'warning'} onClick={handleClick}>
-                    {!isRecoding ? 'Record Voice' : 'Recording...'}
-                </Fab>
-            </div>
-            <div className='col-md-4 bg-light p-3 rounded'>
-                <TextField label='Detected Input' variant='outlined' color='info' value={detectedInput} disabled fullWidth={true} />
-            </div>
-        </Fragment>
-    )
+	return (
+		<Fragment>
+			<div className='col-md-4'>
+				<Fab className='mt-1' variant='extended' color={!isRecoding ? 'inherit' : 'warning'} onClick={handleClick}>
+					{!isRecoding ? 'Record Voice' : 'Recording...'}
+				</Fab>
+			</div>
+			<div className='col-md-4 bg-light p-3 rounded'>
+				<TextField label='Detected Input' variant='outlined' color='info' value={detectedInput} disabled fullWidth={true} />
+			</div>
+		</Fragment>
+	)
 }
 
 export default VoiceSearch

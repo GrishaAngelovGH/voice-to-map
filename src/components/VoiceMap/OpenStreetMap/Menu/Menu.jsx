@@ -11,33 +11,33 @@ import History from './History'
 import Suggestions from './Suggestions'
 
 const Menu = ({ disableHistory }) => {
-    const [showHistory, setShowHistory] = useState(false)
-    const [showSuggestions, setShowSuggestions] = useState(false)
+	const [showHistory, setShowHistory] = useState(false)
+	const [showSuggestions, setShowSuggestions] = useState(false)
 
-    const handleChange = (event, index) => {
-        index === 0 ? !disableHistory && setShowHistory(true) : setShowSuggestions(true)
-    }
+	const handleChange = (event, index) => {
+		index === 0 ? !disableHistory && setShowHistory(true) : setShowSuggestions(true)
+	}
 
-    const handleClose = () => {
-        setShowHistory(false)
-        setShowSuggestions(false)
-    }
+	const handleClose = () => {
+		setShowHistory(false)
+		setShowSuggestions(false)
+	}
 
-    return (
-        <div className='row g-0'>
-            <div className='col-md-12'>
-                <BottomNavigation showLabels={true} onChange={handleChange}>
-                    <BottomNavigationAction label='History' icon={<HistoryIcon />} />
-                    <BottomNavigationAction label='Suggestions' icon={<ListIcon />} />
-                </BottomNavigation>
+	return (
+		<div className='row g-0'>
+			<div className='col-md-12'>
+				<BottomNavigation showLabels={true} onChange={handleChange}>
+					<BottomNavigationAction label='History' icon={<HistoryIcon />} />
+					<BottomNavigationAction label='Suggestions' icon={<ListIcon />} />
+				</BottomNavigation>
 
-                <Drawer open={showHistory || showSuggestions} anchor={'top'} onClose={handleClose}>
-                    {showHistory && <History onClose={handleClose} />}
-                    {showSuggestions && <Suggestions onClose={handleClose} />}
-                </Drawer>
-            </div>
-        </div>
-    )
+				<Drawer open={showHistory || showSuggestions} anchor={'top'} onClose={handleClose}>
+					{showHistory && <History onClose={handleClose} />}
+					{showSuggestions && <Suggestions onClose={handleClose} />}
+				</Drawer>
+			</div>
+		</div>
+	)
 }
 
 export default Menu

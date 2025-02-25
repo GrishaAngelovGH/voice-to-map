@@ -16,54 +16,54 @@ import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver'
 import CloseIcon from '@mui/icons-material/Close'
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction='up' ref={ref} {...props} />
+	return <Slide direction='up' ref={ref} {...props} />
 })
 
 const suggestions = [
-    'Bulgaria Sofia National Palace of Culture',
-    'Bulgaria Sofia Zoo',
-    'Bulgaria Sofia National History Museum',
-    'London Palace of Westminster',
-    'London Buckingham Palace',
-    'London Piccadilly Circus',
-    'London Big Ben',
-    'Tower Bridge London',
-    'Germany Brandenburg Gate',
-    'France Eiffel Tower'
+	'Bulgaria Sofia National Palace of Culture',
+	'Bulgaria Sofia Zoo',
+	'Bulgaria Sofia National History Museum',
+	'London Palace of Westminster',
+	'London Buckingham Palace',
+	'London Piccadilly Circus',
+	'London Big Ben',
+	'Tower Bridge London',
+	'Germany Brandenburg Gate',
+	'France Eiffel Tower'
 ]
 
 const Suggestions = ({ onClose }) => (
-    <Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
-        <AppBar sx={{ position: 'sticky' }} color='secondary'>
-            <Toolbar>
-                <IconButton
-                    edge='start'
-                    color='inherit'
-                    onClick={onClose}
-                    aria-label='close'
-                >
-                    <CloseIcon />
-                </IconButton>
-                <Typography sx={{ ml: 2, flex: 1 }} variant='h6' component='div'>
-                    Voice Search Suggestions
-                </Typography>
-            </Toolbar>
-        </AppBar>
-        <List>
-            {
-                suggestions.map((v, i) => (
-                    <Fragment key={i}>
-                        <ListItem button>
-                            <Fragment >
-                                <ListItemText primary={<span><RecordVoiceOverIcon /> {v}</span>} />
-                            </Fragment>
-                        </ListItem>
-                        <Divider />
-                    </Fragment>
-                ))
-            }
-        </List>
-    </Dialog>
+	<Dialog fullScreen={true} open={true} TransitionComponent={Transition}>
+		<AppBar sx={{ position: 'sticky' }} color='secondary'>
+			<Toolbar>
+				<IconButton
+					edge='start'
+					color='inherit'
+					onClick={onClose}
+					aria-label='close'
+				>
+					<CloseIcon />
+				</IconButton>
+				<Typography sx={{ ml: 2, flex: 1 }} variant='h6' component='div'>
+					Voice Search Suggestions
+				</Typography>
+			</Toolbar>
+		</AppBar>
+		<List>
+			{
+				suggestions.map((v, i) => (
+					<Fragment key={i}>
+						<ListItem button>
+							<Fragment >
+								<ListItemText primary={<span><RecordVoiceOverIcon /> {v}</span>} />
+							</Fragment>
+						</ListItem>
+						<Divider />
+					</Fragment>
+				))
+			}
+		</List>
+	</Dialog>
 )
 
 export default Suggestions
