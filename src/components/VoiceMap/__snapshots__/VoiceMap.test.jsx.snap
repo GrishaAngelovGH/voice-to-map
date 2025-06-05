@@ -61,10 +61,10 @@ exports[`should render VoiceMap component 1`] = `
                           class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
                         >
                           <label
-                            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorInfo Mui-disabled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-ipdm92-MuiFormLabel-root-MuiInputLabel-root"
+                            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorInfo Mui-disabled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-ipdm92-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="false"
-                            for=":r0:"
-                            id=":r0:-label"
+                            for="_r_0_"
+                            id="_r_0_-label"
                           >
                             Detected Input
                           </label>
@@ -75,16 +75,16 @@ exports[`should render VoiceMap component 1`] = `
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
                               disabled=""
-                              id=":r0:"
+                              id="_r_0_"
                               type="text"
                               value=""
                             />
                             <fieldset
                               aria-hidden="true"
-                              class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+                              class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
                             >
                               <legend
-                                class="css-81qg8w"
+                                class="css-1n64csd-MuiNotchedOutlined-root"
                               >
                                 <span>
                                   Detected Input
@@ -262,7 +262,28 @@ exports[`should render VoiceMap component 1`] = `
                               href="https://leafletjs.com"
                               title="A JavaScript library for interactive maps"
                             >
-                              Leaflet
+                              <svg
+                                aria-hidden="true"
+                                class="leaflet-attribution-flag"
+                                height="8"
+                                viewBox="0 0 12 8"
+                                width="12"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M0 0h12v4H0z"
+                                  fill="#4C7BE1"
+                                />
+                                <path
+                                  d="M0 4h12v3H0z"
+                                  fill="#FFD500"
+                                />
+                                <path
+                                  d="M0 7h12v1H0z"
+                                  fill="#E0BC00"
+                                />
+                              </svg>
+                               Leaflet
                             </a>
                           </div>
                         </div>
@@ -341,10 +362,10 @@ exports[`should render VoiceMap component 1`] = `
                         class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
                       >
                         <label
-                          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorInfo Mui-disabled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-ipdm92-MuiFormLabel-root-MuiInputLabel-root"
+                          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorInfo Mui-disabled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-ipdm92-MuiFormLabel-root-MuiInputLabel-root"
                           data-shrink="false"
-                          for=":r0:"
-                          id=":r0:-label"
+                          for="_r_0_"
+                          id="_r_0_-label"
                         >
                           Detected Input
                         </label>
@@ -355,16 +376,16 @@ exports[`should render VoiceMap component 1`] = `
                             aria-invalid="false"
                             class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
                             disabled=""
-                            id=":r0:"
+                            id="_r_0_"
                             type="text"
                             value=""
                           />
                           <fieldset
                             aria-hidden="true"
-                            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+                            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
                           >
                             <legend
-                              class="css-81qg8w"
+                              class="css-1n64csd-MuiNotchedOutlined-root"
                             >
                               <span>
                                 Detected Input
@@ -542,7 +563,28 @@ exports[`should render VoiceMap component 1`] = `
                             href="https://leafletjs.com"
                             title="A JavaScript library for interactive maps"
                           >
-                            Leaflet
+                            <svg
+                              aria-hidden="true"
+                              class="leaflet-attribution-flag"
+                              height="8"
+                              viewBox="0 0 12 8"
+                              width="12"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0 0h12v4H0z"
+                                fill="#4C7BE1"
+                              />
+                              <path
+                                d="M0 4h12v3H0z"
+                                fill="#FFD500"
+                              />
+                              <path
+                                d="M0 7h12v1H0z"
+                                fill="#E0BC00"
+                              />
+                            </svg>
+                             Leaflet
                           </a>
                         </div>
                       </div>
